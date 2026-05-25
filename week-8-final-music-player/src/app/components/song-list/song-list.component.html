@@ -1,0 +1,16 @@
+<h2>Song List</h2>
+
+<div
+  class="song-card"
+  *ngFor="let song of songs; trackBy: trackById"
+>
+
+  <p>
+    {{ song.title }} - {{ song.artist }}
+  </p>
+
+  <button (click)="play(song)">
+    Play
+  </button>
+
+</div>

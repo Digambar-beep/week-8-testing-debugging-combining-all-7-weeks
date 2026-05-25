@@ -1,0 +1,67 @@
+<div class="music-player">
+
+  <h2>{{ currentSong }}</h2>
+
+  <div class="song-list">
+
+    <!-- SONG 1 -->
+    <div class="song-card">
+
+      <img
+        src="assets/cover.png"
+        alt="Blinding Lights"
+        class="cover-image"
+      >
+
+      <h3>Blinding Lights</h3>
+      <p>The Weeknd</p>
+
+      <button (click)="playSong('assets/song1.mp3', 'Blinding Lights')">
+        ▶ Play
+      </button>
+
+    </div>
+
+    <!-- SONG 2 -->
+    <div class="song-card">
+
+      <img
+        src="assets/cover.png"
+        alt="Believer"
+        class="cover-image"
+      >
+
+      <h3>Believer</h3>
+      <p>Imagine Dragons</p>
+
+      <button (click)="playSong('assets/song2.mp3', 'Believer')">
+        ▶ Play
+      </button>
+
+    </div>
+
+    <!-- SONG 3 -->
+    <div class="song-card">
+
+      <img
+        src="assets/cover.png"
+        alt="Shape of You"
+        class="cover-image"
+      >
+
+      <h3>Shape of You</h3>
+      <p>Ed Sheeran</p>
+
+      <button (click)="playSong('assets/song3.mp3', 'Shape of You')">
+        ▶ Play
+      </button>
+
+    </div>
+
+  </div>
+
+  <button class="pause-btn" (click)="pauseSong()">
+    ⏸ Pause
+  </button>
+
+</div>

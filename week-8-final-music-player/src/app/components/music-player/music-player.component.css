@@ -1,0 +1,38 @@
+.music-player {
+  text-align: center;
+  padding: 20px;
+}
+
+.song-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.song-card {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cover-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pause-btn {
+  margin-top: 25px;
+}

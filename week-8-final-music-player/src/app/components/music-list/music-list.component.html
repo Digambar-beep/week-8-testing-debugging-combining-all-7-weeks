@@ -1,0 +1,24 @@
+<div class="container">
+
+  <h2>Music Library</h2>
+
+  <input
+    type="text"
+    placeholder="Search music..."
+    [(ngModel)]="searchText"
+    (input)="searchMusic()"
+  />
+
+  <div class="card" *ngFor="let song of filteredMusic">
+
+    <h3>{{ song.title }}</h3>
+
+    <p><strong>Artist:</strong> {{ song.artist }}</p>
+
+    <p><strong>Album:</strong> {{ song.album }}</p>
+
+    <p><strong>Genre:</strong> {{ song.genre }}</p>
+
+  </div>
+
+</div>

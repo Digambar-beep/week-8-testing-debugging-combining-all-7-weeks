@@ -1,0 +1,13 @@
+<h2>Now Playing</h2>
+
+<div class="now-playing" *ngIf="currentSong$ | async as song">
+
+  <p><strong>Title:</strong> {{ song.title }}</p>
+
+  <p><strong>Artist:</strong> {{ song.artist }}</p>
+
+</div>
+
+<div *ngIf="!(currentSong$ | async)">
+  <p>No song selected</p>
+</div>
